@@ -8,6 +8,7 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        './node_modules/@fortawesome/fontawesome-free/css/*.css',
     ],
     theme: {
         extend: {
