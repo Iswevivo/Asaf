@@ -23,20 +23,6 @@
                 </a>
             </div>
 
-            <!-- Carte Statistiques - Catégories -->
-            <!-- <div class="bg-white p-6 shadow-lg rounded-xl transition transform hover:scale-105 duration-300">
-                <div class="flex items-center justify-between mb-5">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-700">Catégories</h3>
-                        <p class="text-3xl font-bold text-green-600">{{ $categories->count() }}</p>
-                    </div>
-                    <i class="fas fa-tags text-4xl text-green-400"></i>
-                </div>
-                <a href="#" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300 ease-in-out transform hover:scale-105">
-                    <i class="fas fa-tags mr-2"></i>Gérer Catégories
-                </a>
-            </div> -->
-
             <!-- Carte Statistiques - Utilisateurs -->
             <div class="bg-white p-6 shadow-lg rounded-xl transition transform hover:scale-105 duration-300">
                 <div class="flex items-center justify-between mb-5">
@@ -153,5 +139,5 @@
 @endsection
 
 @section('footer')
-    Lorem ipsum
+    le footer ici
 @endsection

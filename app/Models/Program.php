@@ -38,6 +38,8 @@ class Program extends Model
 {
     use softDeletes;
 
+    protected $fillable = ['title', 'slug', 'description', 'days', 'timing', 'center_id'];
+
     public function center()
     {
         return $this->belongsTo(Center::class);

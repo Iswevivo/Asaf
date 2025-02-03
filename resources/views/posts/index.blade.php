@@ -17,7 +17,7 @@
         </a>
     </div>
     
-    <table class="min-w-full bg-white border border-gray-300 shadow-lg">
+    <table class="display min-w-full bg-white border border-gray-300 shadow-lg" id="datatable">
         <thead class="bg-blue-500 text-white">
             <tr>
                 <th class="px-4 py-2 border">#</th>

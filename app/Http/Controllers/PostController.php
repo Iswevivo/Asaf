@@ -138,7 +138,7 @@ class PostController extends Controller
         // Synchroniser toutes les images (anciennes + nouvelles)
         $post->images()->sync($imageIds);
     
-        return redirect()->route('posts.index')->with('success', 'Post mis à jour avec succès.');
+        return redirect()->route('posts.show', $post->slug)->with('success', 'Post mis à jour avec succès.');
     }
     
     // Supprimer un post

@@ -3,7 +3,12 @@
 @section('title', 'Show post')
 
 @section('content')
-    <div class="p-6 transition duration-300 transform bg-white shadow-lg rounded-xl hover:scale-105">
+    @if (session('success'))
+        <div class="flex p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50" role="alert">
+            <span class="font-medium">{{session('success')}}</span>
+        </div>
+    @endif
+    <div class="p-6 transition duration-300 transform mt-5 bg-white shadow-lg rounded-xl hover:scale-105">
         <!-- Carrousel d'images -->
         @if ($post->images)
             <div class="relative w-full mb-5 overflow-hidden carousel-container">

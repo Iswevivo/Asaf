@@ -46,6 +46,8 @@ class Center extends Model
 {
     use softDeletes;
 
+    protected $fillable = ['name', 'description', 'address', 'phone', 'email', 'is_active'];
+
     public function programs()
     {
         return $this->hasMany(Program::class);

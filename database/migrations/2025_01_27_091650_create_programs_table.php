@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('programs', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('slug')->unique();
             $table->string('description');
             $table->string('days');
             $table->string('timing');
+            $table->unique(['title', 'center_id']);
+            $table->foreignId('center_id')->constrained()->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
         });
