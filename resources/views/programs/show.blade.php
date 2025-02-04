@@ -5,22 +5,22 @@
 @section('content')
     <div class="p-6 transition duration-300 transform bg-white shadow-lg rounded-xl hover:scale-105">
         <div class="flex items-center justify-between mb-5">
-            <div class="grid grid-col-12 gap-4">
-                <div class="cols-span-6 border border-s-gray-950 p-1">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 border border-s-gray-950 p-1">
                     <p class="text-xl font-semibold text-blue-500">Intitule : <span class="text-xl font-semibold text-gray-700">{{ $program->title }}</span></p>
                 </div>
-                <div class="cols-span-6 border border-s-gray-950 p-1">
+                <div class="col-span-6 border border-s-gray-950 p-1">
                     <p class="text-xl font-semibold text-blue-500">Jours : <span class="text-xl font-semibold text-gray-700">{{ $program->days }}</span></p>
                 </div>
             </div>
-            <div class="grid grid-col-12 border border-s-gray-950 p-1">
+            <div class="grid grid-cols-12 border border-s-gray-950 p-1">
                 <p class="text-xl font-semibold text-blue-500">Description  : <span class="text-xl font-semibold text-gray-700">{{ $program->description }}</span></p>
             </div>
-            <div class="grid grid-col-12 gap-4">
-                <div class="cols-span-6 border border-s-gray-950 p-1">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-6 border border-s-gray-950 p-1">
                     <p class="text-xl font-semibold text-blue-500">Timing : <span class="text-xl font-semibold text-gray-700">{{ $program->timing }}</span></p>
                 </div>
-                <div class="cols-span-6 border border-s-gray-950 p-1">
+                <div class="col-span-6 border border-s-gray-950 p-1">
                     <p class="text-xl font-semibold text-blue-500">Centre organisateur : <span class="text-xl font-semibold text-gray-700">{{ $program->center->name ?? 'Centre inconnu' }}</span></p>
                 </div>
             </div>
